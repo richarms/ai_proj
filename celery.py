@@ -1,10 +1,8 @@
-from __future__ import absolute_import
-
 from celery import Celery
 
 ai_app = Celery('ai_proj',
              broker='amqp://',
-             backend='amqp://',
+             backend='amqp',
             include=['ai_proj.tasks'])
 
 # Optional configuration, see the application user guide.
