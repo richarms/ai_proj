@@ -1,7 +1,6 @@
 from __future__ import absolute_import
 
 from celery import Celery
-import tasks
 
 ai_app = Celery('ai_proj',
              broker='amqp://',
